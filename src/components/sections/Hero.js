@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
               <a 
                 href={RESUME_PATH} 
-                download={process.env.PUBLIC_URL + "SreevaatsavB_Resume.pdf"}
+                download="SreevaatsavB_Resume.pdf"
                 className={`${darkMode 
                   ? 'bg-white text-blue-900 hover:bg-gray-100' 
                   : 'bg-white text-sky-700 hover:bg-gray-100'} 

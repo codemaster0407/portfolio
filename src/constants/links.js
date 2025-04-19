@@ -8,7 +8,7 @@ export const SOCIAL_LINKS = {
     leetcode: "https://leetcode.com/u/vaatsav06/" // Replace with your actual LeetCode username
   };
   
-  export const RESUME_PATH = "/resume/resume.pdf";
+  export const RESUME_PATH = process.env.PUBLIC_URL + "/resume/resume.pdf";
   
   // Project links
   export const PROJECT_LINKS = {
