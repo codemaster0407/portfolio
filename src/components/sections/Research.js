@@ -2,11 +2,12 @@ import React from 'react';
 import { useTheme } from '../../context/ThemeContext';
 import SectionTitle from '../common/SectionTitle';
 import SectionContainer from '../common/SectionContainer';
+import { PUBLICATION_LINKS } from '../../constants/links';
 
 const Research = () => {
   const { darkMode } = useTheme();
   
-  // Publications data updated from resume
+  // Publications data with links from constants
   const publications = [
     {
       id: 1,
@@ -14,7 +15,8 @@ const Research = () => {
       authors: "Sreevaatsav Bavana, Adit Rushil Potta, Krishi Raju Vysyaraju, Sai Amrit Patnaik, Nidhi Goyal",
       conference: "Under review at SIGKDD, 2025",
       year: "2025",
-      status: "Under review"
+      status: "Under review",
+      link: PUBLICATION_LINKS.givCXR
     },
     {
       id: 2,
@@ -22,7 +24,7 @@ const Research = () => {
       authors: "Kajal Kansal, Nikita Kansal, Sreevaatsav Bavana, Bodla Krishna Vamshi, Nidhi Goyal",
       conference: "Proceedings of the 2nd Workshop on User-centric Narrative Summarization of Long Videos",
       year: "2023",
-      link: "#"
+      link: PUBLICATION_LINKS.videoSummarizationStudy
     }
   ];
 
@@ -65,6 +67,8 @@ const Research = () => {
                 <div className="mt-3">
                   <a 
                     href={pub.link} 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`inline-flex items-center ${darkMode ? 'text-sky-400' : 'text-sky-600'} hover:underline`}
                   >
                     <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

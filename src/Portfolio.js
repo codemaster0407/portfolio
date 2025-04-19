@@ -4,7 +4,7 @@ import { useTheme } from './context/ThemeContext';
 // Layout components
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
-import InteractiveBackground from './components/ui/InteractiveBackground';
+import DynamicBackground from './components/ui/DynamicBackground';
 
 // Section components
 import Hero from './components/sections/Hero';
@@ -14,15 +14,14 @@ import Education from './components/sections/Education';
 import Projects from './components/sections/Projects';
 import Skills from './components/sections/Skills';
 import Research from './components/sections/Research';
-import Contact from './components/sections/Contact';
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState('about');
 
   return (
     <div className="min-h-screen text-white relative">
-      {/* Interactive background with particle animations */}
-      <InteractiveBackground />
+      {/* Dynamic background that switches based on theme */}
+      <DynamicBackground />
       
       {/* Header with navigation */}
       <Header activeSection={activeSection} setActiveSection={setActiveSection} />
@@ -55,10 +54,6 @@ const Portfolio = () => {
         
         <div className={`${activeSection === 'skills' ? 'block' : 'hidden'}`}>
           <Skills />
-        </div>
-        
-        <div className={`${activeSection === 'contact' ? 'block' : 'hidden'}`}>
-          <Contact />
         </div>
       </main>
 

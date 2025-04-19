@@ -163,6 +163,7 @@ const InteractiveBackground = () => {
       // Draw background - HERE'S THE COLOR CHANGE
       
     //   #0b3b7a
+    // #062957
       ctx.fillStyle = darkMode ? '#0f172a' : '#08346e'; // Deep sea blue (#0c4a6e) in light mode
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       

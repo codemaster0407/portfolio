@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import { useTheme } from '../../context/ThemeContext';
 import ProjectCard from '../ui/ProjectCard';
 import SectionTitle from '../common/SectionTitle';
+import { PROJECT_LINKS } from '../../constants/links';
 
 const Projects = () => {
   const { darkMode } = useTheme();
   const [projectFilter, setProjectFilter] = useState('all');
   
-  // Updated projects data from resume
+  // Updated projects data with links from constants
   const projectsData = [
     {
       id: 1,
@@ -15,7 +16,8 @@ const Projects = () => {
       description: "Curated dataset with 892,364 QA pairs with grounding on chest X-rays. Developed VLMs with grounding capabilities outperforming baselines by 10%.",
       category: "ai",
       technologies: ["HuggingFace", "PyTorch", "AWS EC2"],
-      period: "Aug 2024 - Jan 2025"
+      period: "Aug 2024 - Jan 2025",
+      projectLink: PROJECT_LINKS.chestXrayQA
     },
     {
       id: 2,
@@ -23,7 +25,8 @@ const Projects = () => {
       description: "Developed a fine-tuned LLM that assists users in understanding and effectively using various NVIDIA SDKs. Secured 3rd place in ICETCI Hackathon.",
       category: "llm",
       technologies: ["HuggingFace", "PyTorch", "Nvidia-SLURM"],
-      period: "Aug 2023 - Sept 2023"
+      period: "Aug 2023 - Sept 2023",
+      projectLink: PROJECT_LINKS.nvidiaSDK
     },
     {
       id: 3,
@@ -31,7 +34,8 @@ const Projects = () => {
       description: "Improved text-to-image projection by augmenting with a learnable projection layer. Finetuned the baseline's projection module using QVHighlights dataset.",
       category: "ml",
       technologies: ["PyTorch", "Nvidia-SLURM"],
-      period: "Aug 2023 - Dec 2023"
+      period: "Aug 2023 - Dec 2023",
+      projectLink: PROJECT_LINKS.videoSummarization
     },
     {
       id: 4,
@@ -39,7 +43,8 @@ const Projects = () => {
       description: "Collected data from LinkedIn, Twitter and Layoffs.fyi. Analyzed trends and patterns using language modeling and hashtag analysis.",
       category: "nlp",
       technologies: ["HuggingFace", "Scikit-learn", "BeautifulSoup", "GitHub Actions"],
-      period: "Dec 2022 - Jun 2023"
+      period: "Dec 2022 - Jun 2023",
+      projectLink: PROJECT_LINKS.layoffsAnalysis
     }
   ];
   
@@ -118,7 +123,8 @@ const Projects = () => {
               // Adding these props for the ProjectCard component
               description: project.description,
               technologies: project.technologies,
-              period: project.period
+              period: project.period,
+              projectLink: project.projectLink
             }}
             index={project.id - 1}
           />

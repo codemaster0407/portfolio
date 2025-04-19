@@ -95,15 +95,19 @@ const ProjectCard = ({ project, index }) => {
       </div>
       
       <div className="flex justify-start items-center mt-4">
-        <a 
-          href="#" 
-          className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} font-medium hover:underline flex items-center`}
-        >
-          View Project 
-          <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-          </svg>
-        </a>
+        {project.projectLink && (
+          <a 
+            href={project.projectLink} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} font-medium hover:underline flex items-center`}
+          >
+            View Project 
+            <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </a>
+        )}
       </div>
     </div>
   );

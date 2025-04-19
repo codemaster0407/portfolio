@@ -8,17 +8,21 @@ const Skills = () => {
   
   // Updated skills data from resume
   const skillsCategories = [
+    // {
+    //   category: "Approaches",
+    //   skills: ["Supervised learning", "Unsupervised learning", "", "Web Sockets", "Linux", "FastAPI", "Computer networks", "GitHub Actions", "Javascript"]
+    // },
     {
       category: "Languages & Libraries",
-      skills: ["Python", "C++", "SQL", "Pandas", "NumPy", "Scikit-learn", "HuggingFace", "PyTorch", "TensorFlow"]
+      skills: ["Python", "C++", "Javascript", "SQL", "Pandas", "NumPy", "Scikit-learn", "HuggingFace", "PyTorch", "TensorFlow"]
     },
     {
       category: "GenAI & Infrastructure",
-      skills: ["MCP Protocol", "Pydantic AI", "VLLM", "MLFlow", "Nvidia-SLRUM", "Ray"]
+      skills: ["MCP Protocol", "Pydantic AI agentic framework", "VLLM", "MLFlow", "Nvidia-SLRUM", "Ray"]
     },
     {
-      category: "Miscellaneous",
-      skills: ["AWS", "Docker", "Async programming", "Web Sockets", "Linux", "FastAPI", "Computer networks", "GitHub Actions", "Javascript"]
+      category: "Cloud & Deployment",
+      skills: ["AWS", "Docker", "Async programming", "Web Sockets", "Linux", "FastAPI", "Computer networks", "GitHub Actions"]
     },
     {
       category: "Interpersonal & Soft Skills",

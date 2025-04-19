@@ -59,12 +59,6 @@ const Header = ({ activeSection, setActiveSection }) => {
               >
                 Skills
               </button>
-              <button 
-                onClick={() => handleNavClick('contact')}
-                className={`text-white ${activeSection === 'contact' ? 'font-bold border-b-2 border-white' : ''} transition duration-300 hover:text-sky-200`}
-              >
-                Contact
-              </button>
             </nav>
           </div>
           

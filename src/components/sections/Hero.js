@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTheme } from '../../context/ThemeContext';
+import { RESUME_PATH } from '../../constants/links';
 
 const Hero = () => {
   const { darkMode, colors } = useTheme();
@@ -16,18 +17,16 @@ const Hero = () => {
               Passionate about leveraging data science and AI to solve complex problems and drive impactful business decisions.
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
-              <button className={`${darkMode 
-                ? 'bg-white text-blue-900 hover:bg-gray-100' 
-                : 'bg-white text-sky-700 hover:bg-gray-100'} 
-                px-6 py-2 rounded-full font-medium transition duration-300`}>
+              <a 
+                href={RESUME_PATH} 
+                download="SreevaatsavB_Resume.pdf"
+                className={`${darkMode 
+                  ? 'bg-white text-blue-900 hover:bg-gray-100' 
+                  : 'bg-white text-sky-700 hover:bg-gray-100'} 
+                  px-6 py-2 rounded-full font-medium transition duration-300 inline-block`}
+              >
                 Download Resume
-              </button>
-              <button className={`${darkMode 
-                ? colors.buttonSecondary
-                : colors.buttonSecondary} 
-                px-6 py-2 rounded-full font-medium transition duration-300`}>
-                Contact Me
-              </button>
+              </a>
             </div>
           </div>
           

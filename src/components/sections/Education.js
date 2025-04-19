@@ -20,9 +20,8 @@ const Education = () => {
 
   // Academic achievements from resume
   const achievements = [
-    "Gold medalist in the branch",
     "Cumulative GPA: 8.76",
-    "4 years consecutive merit scholarship (2020-2024) worth 5000 USD",
+    "4 years consecutive merit scholarship (2020-2024)",
     "Top 5% of the class consistently",
   ];
 
@@ -65,11 +64,30 @@ const Education = () => {
                 </span>
               </div>
               
-              {/* <div className="mt-2 mb-6">
+              {/* Gold Medal Image Section - Compact Size */}
+              <div className="my-4 flex flex-col items-center">
+                <div className={`rounded-lg overflow-hidden border-2 ${darkMode ? 'border-blue-200' : 'border-blue-200'} shadow-md`} style={{ width: '110%', maxWidth: '600px' }}>
+                  <img 
+                    src="/images/graduation/gold_medal.jpg" 
+                    alt="Receiving Gold Medal from Anand Mahindra" 
+                    className="w-full h-auto object-cover"
+                    style={{ maxHeight: '350px' }}
+                    onError={(e) => {
+                      e.target.onerror = null; 
+                      e.target.src = "/api/placeholder/400/250";
+                    }}
+                  />
+                </div>
+                <p className={`mt-2 text-center text-xs italic ${darkMode ? 'text-gray-300' : 'text-gray-600'}`} style={{ maxWidth: '400px' }}>
+                Honored to receive the Gold Medal from Mr. Anand Mahindra at my convocation ceremony
+                </p>
+              </div>
+              
+              <div className="mt-2 mb-6">
                 <p className={`font-semibold ${darkMode ? 'text-white' : 'text-gray-800'}`}>
                   <strong>Grade:</strong> 8.76/10
                 </p>
-              </div> */}
+              </div>
               
               {/* Key Courses */}
               <div className={`p-4 rounded-lg mt-4 ${darkMode ? 'bg-gray-800' : 'bg-gray-50'}`}>
