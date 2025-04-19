@@ -68,7 +68,7 @@ const Education = () => {
               <div className="my-4 flex flex-col items-center">
                 <div className={`rounded-lg overflow-hidden border-2 ${darkMode ? 'border-blue-200' : 'border-blue-200'} shadow-md`} style={{ width: '110%', maxWidth: '600px' }}>
                   <img 
-                    src="/images/graduation/gold_medal.jpg" 
+                    src= {process.env.PUBLIC_URL + "/images/graduation/gold_medal.jpg"}
                     alt="Receiving Gold Medal from Anand Mahindra" 
                     className="w-full h-auto object-cover"
                     style={{ maxHeight: '350px' }}

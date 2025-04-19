@@ -84,7 +84,7 @@ const About = () => {
                 aria-label="LinkedIn"
               >
                 <img 
-                  src="/icons/linkedin.svg" 
+                  src={process.env.PUBLIC_URL + "/icons/linkedin.svg"}
                   alt="LinkedIn" 
                   className={`w-6 h-6 ${darkMode ? 'filter invert brightness-75' : ''}`} 
                 />
@@ -99,7 +99,7 @@ const About = () => {
                 aria-label="GitHub"
               >
                 <img 
-                  src="/icons/github.svg" 
+                  src={process.env.PUBLIC_URL + "/icons/github.svg"}
                   alt="GitHub" 
                   className={`w-6 h-6 ${darkMode ? 'filter invert brightness-75' : ''}`} 
                 />
@@ -114,7 +114,7 @@ const About = () => {
                 aria-label="Google Scholar"
               >
                 <img 
-                  src="/icons/google-scholar.svg" 
+                  src= {process.env.PUBLIC_URL + "/icons/google-scholar.svg"}
                   alt="Google Scholar" 
                   className={`w-6 h-6 ${darkMode ? 'filter invert brightness-75' : ''}`} 
                 />
@@ -129,7 +129,7 @@ const About = () => {
                 aria-label="Kaggle"
               >
                 <img 
-                  src="/icons/kaggle.svg" 
+                  src= {process.env.PUBLIC_URL + "/icons/kaggle.svg" }
                   alt="Kaggle" 
                   className={`w-6 h-6 ${darkMode ? 'filter invert brightness-75' : ''}`} 
                 />
@@ -144,7 +144,7 @@ const About = () => {
                 aria-label="LeetCode"
               >
                 <img 
-                  src="/icons/leetcode.svg" 
+                  src= {process.env.PUBLIC_URL + "/icons/leetcode.svg" }
                   alt="LeetCode" 
                   className={`w-6 h-6 ${darkMode ? 'filter invert brightness-75' : ''}`} 
                 />

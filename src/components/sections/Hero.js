@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
               <a 
                 href={RESUME_PATH} 
-                download="SreevaatsavB_Resume.pdf"
+                download={process.env.PUBLIC_URL + "SreevaatsavB_Resume.pdf"}
                 className={`${darkMode 
                   ? 'bg-white text-blue-900 hover:bg-gray-100' 
                   : 'bg-white text-sky-700 hover:bg-gray-100'} 
@@ -35,7 +35,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-64 h-64 rounded-full border-4 border-white overflow-hidden shadow-lg">
                 <img 
-                  src="/images/profile/profile-photo.jpg" 
+                  src= {process.env.PUBLIC_URL + "/images/profile/profile-photo.jpg" }
                   alt="Sreevaatsav B" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
