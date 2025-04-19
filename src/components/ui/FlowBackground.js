@@ -24,7 +24,7 @@ const FlowBackground = () => {
     const initParticles = () => {
       const particles = [];
       // Increase density for better visibility
-      const numberOfParticles = Math.floor((canvas.width * canvas.height) / 2000);
+      const numberOfParticles = Math.floor((canvas.width * canvas.height) / 2300);
     //   const numberOfParticles = 400;
       
       // Define emergence/convergence areas
