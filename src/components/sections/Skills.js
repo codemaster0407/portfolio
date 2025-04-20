@@ -6,23 +6,47 @@ import SkillCard from '../ui/SkillCard';
 const Skills = () => {
   const { darkMode } = useTheme();
   
-  // Updated skills data from resume
+  // Updated skills data with expertise levels
+  // Expertise levels: 1-2 = Beginner, 3-4 = Intermediate, 5-6 = Expert
   const skillsCategories = [
-    // {
-    //   category: "Approaches",
-    //   skills: ["Supervised learning", "Unsupervised learning", "", "Web Sockets", "Linux", "FastAPI", "Computer networks", "GitHub Actions", "Javascript"]
-    // },
     {
       category: "Languages & Libraries",
-      skills: ["Python", "C++", "Javascript", "SQL", "Pandas", "NumPy", "Scikit-learn", "HuggingFace", "PyTorch", "TensorFlow"]
+      skills: [
+        { name: "Python", level: 6 },
+        { name: "C++", level: 3 },
+        { name: "Javascript", level: 2 },
+        { name: "SQL", level: 5 },
+        { name: "Pandas", level: 5 },
+        { name: "NumPy", level: 6 },
+        { name: "Scikit-learn", level: 6 },
+        { name: "HuggingFace", level: 6 },
+        { name: "PyTorch", level: 6 },
+        { name: "TensorFlow", level: 5 }
+      ]
     },
     {
       category: "GenAI & Infrastructure",
-      skills: ["MCP Protocol", "Pydantic AI agentic framework", "VLLM", "MLFlow", "SLRUM", "Ray"]
+      skills: [
+        { name: "MCP Protocol", level: 6 },
+        { name: "Pydantic AI", level: 5 },
+        { name: "VLLM", level: 4 },
+        { name: "MLFlow", level: 4 },
+        { name: "SLRUM", level: 4 },
+        { name: "Ray", level: 3 }
+      ]
     },
     {
       category: "Cloud & Deployment",
-      skills: ["AWS", "Docker", "Async programming", "Web Sockets", "Linux", "FastAPI", "Computer networks", "GitHub Actions"]
+      skills: [
+        { name: "AWS", level: 4 },
+        { name: "Docker", level: 5 },
+        { name: "Async programming", level: 6 },
+        { name: "Web Sockets", level: 6 },
+        { name: "Linux", level: 5 },
+        { name: "FastAPI", level: 6 },
+        { name: "Computer networks", level: 4 },
+        { name: "GitHub Actions", level: 4 }
+      ]
     }
   ];
 
@@ -38,7 +62,7 @@ const Skills = () => {
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
               {category.skills.map((skill, index) => (
-                <SkillCard key={index} skill={{ name: skill }} darkMode={darkMode} />
+                <SkillCard key={index} skill={skill} darkMode={darkMode} />
               ))}
             </div>
           </div>

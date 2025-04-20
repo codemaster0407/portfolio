@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { useTheme } from '../../context/ThemeContext';
 import InteractiveBackground from './InteractiveBackground';
 import FlowBackground from './FlowBackground';
+import NeuralNetworkBackground from './NeuralNetworkBackground';
 
 const DynamicBackground = () => {
   const { darkMode } = useTheme();
   const [isMobile, setIsMobile] = useState(false);
+  const [darkModeBackground, setDarkModeBackground] = useState('flow'); // Options: 'flow', 'neural'
   
   // Check if device is mobile based on screen width
   useEffect(() => {
@@ -22,15 +24,20 @@ const DynamicBackground = () => {
     // Cleanup
     return () => window.removeEventListener('resize', checkIfMobile);
   }, []);
-  
+ 
   // Logic for choosing background:
   // 1. Light mode (all devices): InteractiveBackground
   // 2. Dark mode on mobile: InteractiveBackground
-  // 3. Dark mode on desktop: FlowBackground
+  // 3. Dark mode on desktop: NeuralNetworkBackground (FlowBackground commented out)
   if (!darkMode) {
     return <InteractiveBackground />;
+  } else if (isMobile) {
+    return <InteractiveBackground />;
   } else {
-    return isMobile ? <InteractiveBackground /> : <FlowBackground />;
+    // For dark mode on desktop, currently only using NeuralNetworkBackground
+    // To use FlowBackground, uncomment the line below and comment out the NeuralNetworkBackground line
+    // return <FlowBackground />;
+    return <NeuralNetworkBackground />;
   }
 };
 
