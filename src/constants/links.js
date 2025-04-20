@@ -12,14 +12,14 @@ export const SOCIAL_LINKS = {
   
   // Project links
   export const PROJECT_LINKS = {
-    chestXrayQA: "https://github.com/SreevaatsavB/chest-xray-qa",
+    chestXrayQA: "",
     nvidiaSDK: "https://github.com/SreevaatsavB/ICETCI-Hackathon",
-    videoSummarization: "https://github.com/SreevaatsavB/video-summarization",
-    layoffsAnalysis: "https://github.com/SreevaatsavB/layoffs-analysis"
+    videoSummarization: "",
+    layoffsAnalysis: ""
   };
   
   // Publication links
   export const PUBLICATION_LINKS = {
-    givCXR: "https://arxiv.org/abs/your-paper-id",
+    givCXR: "",
     videoSummarizationStudy: "https://dl.acm.org/doi/10.1145/3607540.3617139"
   };

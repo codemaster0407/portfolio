@@ -18,15 +18,11 @@ const Skills = () => {
     },
     {
       category: "GenAI & Infrastructure",
-      skills: ["MCP Protocol", "Pydantic AI agentic framework", "VLLM", "MLFlow", "Nvidia-SLRUM", "Ray"]
+      skills: ["MCP Protocol", "Pydantic AI agentic framework", "VLLM", "MLFlow", "SLRUM", "Ray"]
     },
     {
       category: "Cloud & Deployment",
       skills: ["AWS", "Docker", "Async programming", "Web Sockets", "Linux", "FastAPI", "Computer networks", "GitHub Actions"]
-    },
-    {
-      category: "Interpersonal & Soft Skills",
-      skills: ["Time Management", "Teamwork", "Problem-solving"]
     }
   ];
 
