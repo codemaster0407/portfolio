@@ -162,39 +162,15 @@ const About = () => {
               </div>
             </div>
             
-            {/* Skills & Expertise Section */}
+            {/* About Me Section */}
             <div className="mb-8">
-              <h3 className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-4`}>Technical Skills</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <span className={darkMode ? 'text-blue-400' : 'text-sky-600'}>▹</span>
-                  <div className="ml-2">
-                    <span className={`font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>AI & Machine Learning</span> 
-                    <span className={darkMode ? 'text-gray-300' : 'text-gray-700'}> with expertise in deep learning, neural networks, and statistical modeling for complex data analysis.</span>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className={darkMode ? 'text-blue-400' : 'text-sky-600'}>▹</span>
-                  <div className="ml-2">
-                    <span className={`font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>NLP & Large Language Models</span> 
-                    <span className={darkMode ? 'text-gray-300' : 'text-gray-700'}> including fine-tuning, optimization, and deployment of state-of-the-art language models.</span>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className={darkMode ? 'text-blue-400' : 'text-sky-600'}>▹</span>
-                  <div className="ml-2">
-                    <span className={`font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>Software Engineering</span> 
-                    <span className={darkMode ? 'text-gray-300' : 'text-gray-700'}> with proficiency in Python, SQL, and cloud technologies for scalable AI applications.</span>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className={darkMode ? 'text-blue-400' : 'text-sky-600'}>▹</span>
-                  <div className="ml-2">
-                    <span className={`font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>Research Experience</span> 
-                    <span className={darkMode ? 'text-gray-300' : 'text-gray-700'}> in developing novel methodologies for multimodal AI systems and published research.</span>
-                  </div>
-                </li>
-              </ul>
+              <h3 className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-4`}>Hey, I'm Vaatsav!</h3>
+              <p className={`${darkMode ? 'text-gray-300' : 'text-gray-700'} mb-4`}>
+                I'm an Associate Data Scientist with a passion for solving complex problems using AI and machine learning. My journey in tech began with a curiosity about how data can transform the way we understand the world around us. When I'm not training models or diving into code, you might find me at the gym or painting some landscapes.
+              </p>
+              <p className={darkMode ? 'text-gray-300' : 'text-gray-700'}>
+                I'm always eager to collaborate on projects that push the boundaries of what's possible with technology while making a positive impact on people's lives. Let's connect and create something amazing together!
+              </p>
             </div>
             
             {/* Current Projects & Interests */}
