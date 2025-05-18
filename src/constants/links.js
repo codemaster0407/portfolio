@@ -15,7 +15,8 @@ export const SOCIAL_LINKS = {
     chestXrayQA: "",
     nvidiaSDK: "https://github.com/SreevaatsavB/ICETCI-Hackathon",
     videoSummarization: "",
-    layoffsAnalysis: ""
+    layoffsAnalysis: "",
+    scratchLLM: "https://github.com/SreevaatsavB/Generative_AI_fundamentals"
   };
   
   // Publication links

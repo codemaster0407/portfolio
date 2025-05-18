@@ -21,6 +21,15 @@ const Projects = () => {
     },
     {
       id: 2,
+      title: "Generative AI fundamentals from scratch",
+      description: "Coded modules like transformers and language models from scratch using PyTorch. Matched each intermediate output with HuggingFace's implementation.",
+      category: "llm",
+      technologies: ["HuggingFace", "PyTorch"],
+      period: "Apr 2024 - May 2024",
+      projectLink: PROJECT_LINKS.scratchLLM
+    },
+    {
+      id: 3,
       title: "AI-Assisted Learning for NVIDIA SDKs and Toolkits",
       description: "Developed a fine-tuned LLM that assists users in understanding and effectively using various NVIDIA SDKs. Secured 3rd place in ICETCI Hackathon.",
       category: "llm",
@@ -29,7 +38,7 @@ const Projects = () => {
       projectLink: PROJECT_LINKS.nvidiaSDK
     },
     {
-      id: 3,
+      id: 4,
       title: "Enhancing Video Summarization with Text-to-Image Module",
       description: "Improved text-to-image projection by augmenting with a learnable projection layer. Finetuned the baseline's projection module using QVHighlights dataset.",
       category: "ml",
@@ -38,7 +47,7 @@ const Projects = () => {
       projectLink: PROJECT_LINKS.videoSummarization
     },
     {
-      id: 4,
+      id: 5,
       title: "Analysis of Social Media Posts About Mass Layoffs",
       description: "Collected data from LinkedIn, Twitter and Layoffs.fyi. Analyzed trends and patterns using language modeling and hashtag analysis.",
       category: "nlp",
