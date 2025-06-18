@@ -12,9 +12,9 @@ const Hero = () => {
           {/* Left side with text */}
           <div className="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Sreevaatsav B</h1>
-            <h2 className="text-xl md:text-2xl mb-6 text-white">Associate Data Scientist | AI Enthusiast | Gold Medalist</h2>
+            <h2 className="text-xl md:text-2xl mb-6 text-white">Associate Data Scientist | Multi-modal AI | Gold Medalist</h2>
             <p className="text-lg mb-8 max-w-lg text-white">
-              Passionate about leveraging data science and AI to solve complex problems, helping maximize impact on productivity.
+              Passionate about leveraging data science and AI to build innovative solutions and detect interesting patterns from data.
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
               <a 

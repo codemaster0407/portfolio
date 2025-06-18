@@ -25,14 +25,22 @@ const Skills = () => {
       ]
     },
     {
-      category: "GenAI & Infrastructure",
+      category: "Machine & Deep Learning",
       skills: [
-        { name: "MCP Protocol", level: 6 },
+        { name: "Supervised Learning (Tradional ML)", level: 6 },
+        { name: "Unsupervised Learning", level: 5 },
+        { name: "Reinforcement Learning", level: 3 },
+      ]
+    },
+    {
+      category: "AI engineering & Infrastructure",
+      skills: [
+        { name: "MCP", level: 6 },
         { name: "Pydantic AI", level: 5 },
         { name: "VLLM", level: 4 },
         { name: "MLFlow", level: 4 },
         { name: "SLRUM", level: 4 },
-        { name: "Ray", level: 3 }
+        { name: "Ray", level: 2 }
       ]
     },
     {

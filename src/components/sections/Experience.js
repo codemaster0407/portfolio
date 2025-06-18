@@ -2,6 +2,7 @@ import React from 'react';
 import { useTheme } from '../../context/ThemeContext';
 import SectionTitle from '../common/SectionTitle';
 import TimelineItem from '../ui/TimelineItem';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const Experience = () => {
   const { darkMode } = useTheme();
@@ -9,11 +10,27 @@ const Experience = () => {
   const experienceData = [
     {
       id: 1,
+      role: 'Data Scientist',
+      company: 'Penguin AI',
+      companyUrl: 'https://www.penguinai.co/',
+      logo: `${process.env.PUBLIC_URL}/assets/logos/penguin-ai-logo.svg`,
+      period: 'June 2025 - Present',
+      description: 'Working as a full-time Data Scientist at Penguin AI.',
+      skills: ['Multi Agent workflows', 'LLMOps', 'Scalable AI applications'],
+      details: [
+        'Developing a No-Code-AI platform for businesses to build and deploy custom llm-workflows in healthcare domain.',
+        'Working on applied research methodologies to enhance the outputs of medical coding',
+      ]
+    },
+    {
+      id: 2,
       role: 'Associate Data Scientist',
       company: 'Awone AI',
-      period: 'Jun 2024 - Present',
+      companyUrl: 'https://awone.ai',
+      logo: `${process.env.PUBLIC_URL}/assets/logos/awone-ai-logo.svg`,
+      period: 'Jun 2024 - June 2025',
       description: 'Working as a full-time Associate Data Scientist at Awone AI in Hyderabad, India.',
-      skills: ['LLMs', 'VLMs', 'Agentic workflows', 'Machine Learning', 'MLOPs'],
+      skills: ['LLMs', 'VLMs', 'AI agents', 'Machine Learning', 'MLOps'],
       details: [
         'Developed an end-to-end interruptible voice chat application with open-source components with MCP client-server for a user database.',
         'Improved the inference speed of production LLMs by 15% by quantization and developing speculative decoding n-gram head.',
@@ -21,9 +38,11 @@ const Experience = () => {
       ]
     },
     {
-      id: 2,
+      id: 3,
       role: 'Data Science Intern',
       company: 'Awone AI',
+      companyUrl: 'https://awone.ai',
+      logo: `${process.env.PUBLIC_URL}/assets/logos/awone-ai-logo.svg`,
       period: 'Jan 2024 - Jun 2024',
       description: 'Completed a 6-month internship in Data Science at Awone AI in Hyderabad, India.',
       skills: ['LLMs', 'Transformers', 'Inference Optimization', 'GenAI'],
@@ -34,9 +53,11 @@ const Experience = () => {
       ]
     },
     {
-      id: 3,
+      id: 4,
       role: 'Research Intern',
       company: 'Mahindra University',
+      companyUrl: 'https://www.mahindrauniversity.edu.in',
+      logo: `${process.env.PUBLIC_URL}/assets/logos/mahindra-university-logo.svg`,
       period: 'Jul 2023 - Sept 2023',
       description: 'Research internship focused on video summarization techniques at Mahindra University.',
       skills: ['Research', 'Video Summarization', 'Data Analysis'],
@@ -81,7 +102,31 @@ const Experience = () => {
                 {/* Right side - Content */}
                 <div className={`mt-3 md:mt-0 ${darkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg shadow-md`}>
                   <h3 className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>{experience.role}</h3>
-                  <p className={`${darkMode ? 'text-sky-400' : 'text-sky-600'} font-medium`}>{experience.company}</p>
+                  <div className="flex flex-col gap-2 mb-2">
+                    {experience.logo && (
+                      <div className="flex items-center gap-2">
+                        <img 
+                          src={experience.logo} 
+                          alt={`${experience.company} logo`} 
+                          className="h-10 w-auto object-contain"
+                        />
+                        <div className="flex items-center gap-2">
+                          <p className={`${darkMode ? 'text-sky-400' : 'text-sky-600'} font-medium`}>{experience.company}</p>
+                          {experience.companyUrl && (
+                            <a 
+                              href={experience.companyUrl} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className={`inline-flex items-center ${darkMode ? 'text-sky-400 hover:text-sky-300' : 'text-sky-600 hover:text-sky-700'} transition-colors`}
+                              aria-label={`Visit ${experience.company} website`}
+                            >
+                              <FaExternalLinkAlt size={14} />
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                    )}
+                  </div>
                   
                   <div className="mt-4 flex flex-wrap gap-2">
                     {experience.skills.map((skill, index) => (
