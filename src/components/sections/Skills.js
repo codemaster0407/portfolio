@@ -53,7 +53,9 @@ const Skills = () => {
         { name: "Linux", level: 5 },
         { name: "FastAPI", level: 6 },
         { name: "Computer networks", level: 4 },
-        { name: "GitHub Actions", level: 4 }
+        { name: "GitHub Actions", level: 4 },
+        { name: "MongoDB", level: 5 },
+
       ]
     }
   ];

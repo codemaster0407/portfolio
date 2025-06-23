@@ -16,10 +16,11 @@ const Experience = () => {
       logo: `${process.env.PUBLIC_URL}/assets/logos/penguin-ai-logo.svg`,
       period: 'June 2025 - Present',
       description: 'Working as a full-time Data Scientist at Penguin AI.',
-      skills: ['Multi Agent workflows', 'LLMOps', 'Scalable AI applications'],
+      skills: ['Multi Agent workflows', 'MLOps'],
       details: [
-        'Developing a No-Code-AI platform for businesses to build and deploy custom llm-workflows in healthcare domain.',
-        'Working on applied research methodologies to enhance the outputs of medical coding',
+        'Developing a minimal coding platform for businesses to build and deploy custom workflows in healthcare domain using llms.',
+        'Working on applied research methodologies to enhance automated medical coding.',
+        'Development and maintainance of tradional ML pipelines for insurance denial prediction.'
       ]
     },
     {
@@ -30,7 +31,7 @@ const Experience = () => {
       logo: `${process.env.PUBLIC_URL}/assets/logos/awone-ai-logo.svg`,
       period: 'Jun 2024 - June 2025',
       description: 'Working as a full-time Associate Data Scientist at Awone AI in Hyderabad, India.',
-      skills: ['LLMs', 'VLMs', 'AI agents', 'Machine Learning', 'MLOps'],
+      skills: ['LLMs', 'VLMs', 'Machine Learning'],
       details: [
         'Developed an end-to-end interruptible voice chat application with open-source components with MCP client-server for a user database.',
         'Improved the inference speed of production LLMs by 15% by quantization and developing speculative decoding n-gram head.',
