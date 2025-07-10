@@ -10,61 +10,30 @@ const Experience = () => {
   const experienceData = [
     {
       id: 1,
-      role: 'Data Scientist',
-      company: 'Penguin AI',
-      companyUrl: 'https://www.penguinai.co/',
-      logo: `${process.env.PUBLIC_URL}/assets/logos/penguin-ai-logo.svg`,
-      period: 'June 2025 - Present',
-      description: 'Working as a full-time Data Scientist at Penguin AI.',
-      skills: ['Multi Agent workflows', 'MLOps'],
+      role: 'Associate AI Engineer',
+      company: 'Techolution',
+      companyUrl: 'https://www.techolution.com/',
+      logo: `${process.env.PUBLIC_URL}/assets/logos/techo.svg`,
+      period: 'June 2024 - July 2025',
+      description: 'Worked as a full time AI Engineer specializing in Computer vision applications and Python backend.',
+      skills: ['Computer Vision', 'Docker', 'Python', 'VLLMs', 'Backend Development'],
       details: [
-        'Developing a minimal coding platform for businesses to build and deploy custom workflows in healthcare domain using llms.',
-        'Working on applied research methodologies to enhance automated medical coding.',
-        'Development and maintainance of tradional ML pipelines for insurance denial prediction.'
+        'Developed a medical product scanning station for faster inventory management for medical products.',
+        'Developed pipelines for custom OCR models for handwritten text recognition ',
+        'Bridging gaps between backend and AI models by developing Python backend services for model inference and data processing.',
       ]
     },
     {
       id: 2,
-      role: 'Associate Data Scientist',
-      company: 'Awone AI',
-      companyUrl: 'https://awone.ai',
-      logo: `${process.env.PUBLIC_URL}/assets/logos/awone-ai-logo.svg`,
-      period: 'Jun 2024 - June 2025',
-      description: 'Working as a full-time Associate Data Scientist at Awone AI in Hyderabad, India.',
-      skills: ['LLMs', 'VLMs', 'Machine Learning'],
+      role: 'AI Intern',
+      company: 'Techolution',
+      companyUrl: 'https://www.techolution.com/',
+      logo: `${process.env.PUBLIC_URL}/assets/logos/techo.svg`,
+      period: 'Nov 2023 - May 2024',
+      description: 'Worked as an AI intern and researching on onboarding new classes for CV Models.',
+      skills: ['Computer Vision', 'Machine Learning'],
       details: [
-        'Developed an end-to-end interruptible voice chat application with open-source components with MCP client-server for a user database.',
-        'Improved the inference speed of production LLMs by 15% by quantization and developing speculative decoding n-gram head.',
-        'Enhanced customer chatbot solutions through custom LLM routing, dynamic memory updates, and advanced reranking models, decreasing the token cost by 30%.'
-      ]
-    },
-    {
-      id: 3,
-      role: 'Data Science Intern',
-      company: 'Awone AI',
-      companyUrl: 'https://awone.ai',
-      logo: `${process.env.PUBLIC_URL}/assets/logos/awone-ai-logo.svg`,
-      period: 'Jan 2024 - Jun 2024',
-      description: 'Completed a 6-month internship in Data Science at Awone AI in Hyderabad, India.',
-      skills: ['LLMs', 'Transformers', 'Inference Optimization', 'GenAI'],
-      details: [
-        'Developed a strong foundation in LLMs and transformers by coding state-of-the-art models like Llama-2 and Mistral from scratch, focusing on architectures, attention mechanisms, and optimizations.',
-        'Experimented with several LLM optimization and quantization techniques, helping to reduce latency on development platform.',
-        'Finetuned task-specific SLMs for medical-insurance related tasks.'
-      ]
-    },
-    {
-      id: 4,
-      role: 'Research Intern',
-      company: 'Mahindra University',
-      companyUrl: 'https://www.mahindrauniversity.edu.in',
-      logo: `${process.env.PUBLIC_URL}/assets/logos/mahindra-university-logo.svg`,
-      period: 'Jul 2023 - Sept 2023',
-      description: 'Research internship focused on video summarization techniques at Mahindra University.',
-      skills: ['Research', 'Video Summarization', 'Data Analysis'],
-      details: [
-        'Collaborated with a four-person team to conduct a thorough research survey on video summarization techniques.',
-        'Co-authored a survey paper published in the ACMMM Workshop 2023.'
+        'Worked on developing custom pipelines for onboarding new classes for computer vision models.',
       ]
     }
   ];
