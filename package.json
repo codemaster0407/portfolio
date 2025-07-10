@@ -43,7 +43,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "main": "^6.3.0"
   },
-  "homepage": "https://SreevaatsavB.github.io/portfolio"
+  "homepage": "https://codemaster0407.github.io/portfolio"
 }

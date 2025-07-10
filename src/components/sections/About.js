@@ -23,7 +23,7 @@ const About = () => {
                     <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"></path>
                   </svg>
                 </div>
-                <span className={darkMode ? 'text-gray-300' : 'text-gray-700'}>Associate Data Scientist</span>
+                <span className={darkMode ? 'text-gray-300' : 'text-gray-700'}>Masters in Business Analytics Student, WBS</span>
               </div>
               
               <div className="flex items-center">
@@ -42,8 +42,8 @@ const About = () => {
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                   </svg>
                 </div>
-                <a href="mailto:bavanasreevaatsav1@gmail.com" className={`${darkMode ? 'text-gray-300 hover:text-blue-300' : 'text-gray-700 hover:text-sky-600'} transition-colors`}>
-                  bavanasreevaatsav1@gmail.com
+                <a href="mailto:schaitanya0407@gmail.com" className={`${darkMode ? 'text-gray-300 hover:text-blue-300' : 'text-gray-700 hover:text-sky-600'} transition-colors`}>
+                  schaitanya0407@gmail.com
                 </a>
               </div>
               
@@ -53,7 +53,7 @@ const About = () => {
                     <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
                   </svg>
                 </div>
-                <span className={darkMode ? 'text-gray-300' : 'text-gray-700'}>Gold Medalist in BTech AI</span>
+                <span className={darkMode ? 'text-gray-300' : 'text-gray-700'}>Btech in AI Graduate</span>
               </div>
             </div>
             
@@ -69,6 +69,10 @@ const About = () => {
               </div>
               <div className="flex justify-between">
                 <span className={darkMode ? 'text-gray-300' : 'text-gray-700'}>Telugu</span>
+                <span className={darkMode ? 'text-gray-400' : 'text-gray-500'} italic>Native</span>
+              </div>
+              <div className="flex justify-between">
+                <span className={darkMode ? 'text-gray-300' : 'text-gray-700'}>Tamil</span>
                 <span className={darkMode ? 'text-gray-400' : 'text-gray-500'} italic>Native</span>
               </div>
             </div>
@@ -105,50 +109,10 @@ const About = () => {
                 />
               </a>
               
-              {/* Google Scholar */}
-              <a 
-                href={SOCIAL_LINKS.googleScholar} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className={`${darkMode ? 'text-gray-300 hover:text-blue-300' : 'text-gray-600 hover:text-sky-600'} transition-colors`}
-                aria-label="Google Scholar"
-              >
-                <img 
-                  src= {process.env.PUBLIC_URL + "/icons/google-scholar.svg"}
-                  alt="Google Scholar" 
-                  className={`w-6 h-6 ${darkMode ? 'filter invert brightness-75' : ''}`} 
-                />
-              </a>
+           
+             
               
-              {/* Kaggle */}
-              <a 
-                href={SOCIAL_LINKS.kaggle} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className={`${darkMode ? 'text-gray-300 hover:text-blue-300' : 'text-gray-600 hover:text-sky-600'} transition-colors`}
-                aria-label="Kaggle"
-              >
-                <img 
-                  src= {process.env.PUBLIC_URL + "/icons/kaggle.svg" }
-                  alt="Kaggle" 
-                  className={`w-6 h-6 ${darkMode ? 'filter invert brightness-75' : ''}`} 
-                />
-              </a>
               
-              {/* LeetCode */}
-              <a 
-                href={SOCIAL_LINKS.leetcode} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className={`${darkMode ? 'text-gray-300 hover:text-blue-300' : 'text-gray-600 hover:text-sky-600'} transition-colors`}
-                aria-label="LeetCode"
-              >
-                <img 
-                  src= {process.env.PUBLIC_URL + "/icons/leetcode.svg" }
-                  alt="LeetCode" 
-                  className={`w-6 h-6 ${darkMode ? 'filter invert brightness-75' : ''}`} 
-                />
-              </a>
             </div>
           </div>
           
@@ -156,20 +120,20 @@ const About = () => {
           <div className="md:col-span-5">
             {/* Header section */}
             <div className="mb-6">
-              <div className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-1`}>Associate Data Scientist</div>
+              <div className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-1`}>Ex-Associate AI Engineer</div>
               <div className="flex justify-between mb-4">
-                <div className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Awone AI, Hyderabad</div>
+                <div className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Techolution, Hyderabad</div>
               </div>
             </div>
             
             {/* About Me Section */}
             <div className="mb-8">
-              <h3 className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-4`}>Hey, I'm Vaatsav!</h3>
+              <h3 className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-4`}>Hey, I'm Chaitanya!</h3>
               <p className={`${darkMode ? 'text-gray-300' : 'text-gray-700'} mb-4`}>
-                I'm an Associate Data Scientist with a passion for solving complex problems using AI and machine learning. My journey in tech began with a curiosity about how data can transform the way we understand the world around us. When I'm not training models or diving into code, you might find me at the gym or painting some landscapes.
+                Hi there! I’m an AI Engineer with a passion for building impactful and innovative AI solutions. With a solid background in Computer Vision, I’ve developed multiple applications and successfully delivered client-facing projects. Beyond my enthusiasm for AI, I also enjoy crafting robust backend systems in Python and building scalable applications using Docker and Kubernetes.
               </p>
               <p className={darkMode ? 'text-gray-300' : 'text-gray-700'}>
-                I'm always eager to collaborate on projects that push the boundaries of what's possible with technology while making a positive impact on people's lives. Let's connect and create something amazing together!
+                I'm always eager to collaborate on projects that push the boundaries of what's possible with technology while making a positive impact on people's lives. Let's connect and create something amazing together! You have an idea, I build it!
               </p>
             </div>
             
@@ -177,10 +141,10 @@ const About = () => {
             <div className="mb-8">
               <h3 className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-4`}>Current Focus</h3>
               <p className={`${darkMode ? 'text-gray-300' : 'text-gray-700'} mb-4`}>
-                I'm currently focused on developing <span className={`font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>explainable AI systems</span> that bring transparency to complex machine learning models. My work involves creating <span className={`font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>multimodal AI frameworks</span> that can process and understand diverse types of data simultaneously.
+                I'm currently preparing for my next journey in my career as a  <span className={`font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}> Masters in Business Analytics Student</span> at Warwick Business School, UK. I'll be starting my studies in September 2025, where I aim to bridge the gap between AI technology and business strategy. This program will equip me with the skills to leverage data analytics for strategic decision-making, enhancing my ability to create AI solutions that drive business value.
               </p>
               <p className={darkMode ? 'text-gray-300' : 'text-gray-700'}>
-                At Awone AI, I'm developing advanced solutions for <span className={`font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>natural language understanding</span> and <span className={`font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>conversational AI</span>. I'm particularly interested in creating AI systems that can effectively combine visual and textual information for enhanced reasoning capabilities.
+                At Techolution, I have developed advanced solutions for <span className={`font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>Inventory Management using Computer Vision</span> . Currently, I'm interested in exploring the intersection of AI and business, particularly in how AI can optimize operations and enhance customer experiences. I am also keen on learning more about <span className={`font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>Generative AI</span> and its applications in various industries.
               </p>
             </div>
           </div>

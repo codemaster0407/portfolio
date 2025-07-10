@@ -16,7 +16,7 @@ const Header = ({ activeSection, setActiveSection }) => {
     <header className={`${darkMode ? 'bg-gray-900/90' : colors.headerBg} sticky top-0 z-50 shadow-lg border-b ${darkMode ? 'border-gray-800' : 'border-sky-400'}`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-white">Sreevaatsav B</h1>
+          <h1 className="text-2xl font-bold text-white">Chaitanya Srikanth</h1>
           <div className="flex items-center space-x-6">
             {/* Theme toggle */}
             <ThemeToggle />

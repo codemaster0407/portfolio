@@ -11,29 +11,18 @@ const Research = () => {
   const publications = [
     {
       id: 1,
-      title: "GIV-CXR: Densely Grounded, Visually Interpretable, Chest X-Ray Question Answering Dataset",
-      authors: "Sreevaatsav Bavana, Adit Rushil Potta, Krishi Raju Vysyaraju, Sai Amrit Patnaik, Nidhi Goyal",
-      conference: "Under review at SIGKDD, 2025",
+      title: "AI-Assisted Learning for NVIDIA SDKs and Toolkits",
+      authors: "B Sreevaatsav, Chaitanya Srikanth, B Krishna Vamshi, G Veera Deepesh, K Sujith Sai",
+      conference: "2023 international conference on emerging techniques in computational intelligence (ICETCI)",
       year: "2025",
-      status: "Under review",
       link: PUBLICATION_LINKS.givCXR
-    },
-    {
-      id: 2,
-      title: "A Systematic Study on Video Summarization: Approaches, Challenges, and Future Directions",
-      authors: "Kajal Kansal, Nikita Kansal, Sreevaatsav Bavana, Bodla Krishna Vamshi, Nidhi Goyal",
-      conference: "Proceedings of the 2nd Workshop on User-centric Narrative Summarization of Long Videos",
-      year: "2023",
-      link: PUBLICATION_LINKS.videoSummarizationStudy
     }
   ];
 
   // Research interests from resume
   const researchInterests = [
-    "Multi modal model research & frameworks development",
-    "Explainable AI techniques in the field of conversational AI and multi-modalities",
-    "Efficient fine-tuning and compression techniques for domain-specific small LLMs/VLMs"
-  ];
+    "Computer Vision",
+    "Data Science and Analytics"  ];
 
   return (
     <section className="mb-12">

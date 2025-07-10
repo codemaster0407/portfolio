@@ -11,15 +11,15 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Left side with text */}
           <div className="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Sreevaatsav B</h1>
-            <h2 className="text-xl md:text-2xl mb-6 text-white">Associate Data Scientist | Multi-modal AI | Gold Medalist</h2>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Chaitanya Srikanth</h1>
+            <h2 className="text-xl md:text-2xl mb-6 text-white">Incoming MSBA student at Warwick Business School | Ex AI Engineer @ Techolution | Computer Vision | Google Certified Professional Machine Learning Engineer</h2>
             <p className="text-lg mb-8 max-w-lg text-white">
-              Passionate about leveraging data science and AI to build innovative solutions and detect interesting patterns from data.
+              Passionate about leveraging   AI to build innovative solutions and detect interesting patterns from data and bridge gap between business and technology.
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
               <a 
                 href={RESUME_PATH} 
-                download="SreevaatsavB_Resume.pdf"
+                download="Chaitanya Resume.pdf"
                 className={`${darkMode 
                   ? 'bg-white text-blue-900 hover:bg-gray-100' 
                   : 'bg-white text-sky-700 hover:bg-gray-100'} 

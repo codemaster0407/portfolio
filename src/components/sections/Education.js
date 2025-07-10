@@ -20,9 +20,8 @@ const Education = () => {
 
   // Academic achievements from resume
   const achievements = [
-    "Cumulative GPA: 8.76",
-    "4 years consecutive merit scholarship (2020-2024)",
-    "Top 5% of the class consistently",
+    "Cumulative GPA: 8.33",
+    "2 years consecutive merit scholarship (2022-2023)",
   ];
 
   return (
@@ -51,7 +50,7 @@ const Education = () => {
                 </div>
                 
                 <div className={`${darkMode ? 'bg-sky-800' : 'bg-sky-100'} ${darkMode ? 'text-white' : 'text-sky-800'} px-3 py-1 rounded-full text-sm mt-2 md:mt-0`}>
-                  Aug 2020 - Aug 2024
+                  Sep 2020 - Aug 2024
                 </div>
               </div>
               
@@ -60,7 +59,7 @@ const Education = () => {
                   <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
                 </svg>
                 <span className={`font-medium ${darkMode ? 'text-white' : 'text-gray-800'}`}>
-                  Gold medalist in BTech AI for the class of 2020
+                  Scholarship Holder
                 </span>
               </div>
               
@@ -68,7 +67,7 @@ const Education = () => {
               <div className="my-4 flex flex-col items-center">
                 <div className={`rounded-lg overflow-hidden border-2 ${darkMode ? 'border-blue-200' : 'border-blue-200'} shadow-md`} style={{ width: '110%', maxWidth: '600px' }}>
                   <img 
-                    src= {process.env.PUBLIC_URL + "/images/graduation/gold_medal.jpg"}
+                    src= {process.env.PUBLIC_URL + "/images/graduation/grad.jpg"}
                     alt="Receiving Gold Medal from Anand Mahindra" 
                     className="w-full h-auto object-cover"
                     style={{ maxHeight: '350px' }}
@@ -78,14 +77,11 @@ const Education = () => {
                     }}
                   />
                 </div>
-                <p className={`mt-2 text-center text-xs italic ${darkMode ? 'text-gray-300' : 'text-gray-600'}`} style={{ maxWidth: '400px' }}>
-                Honored to receive the Gold Medal from Mr. Anand Mahindra at my convocation ceremony
-                </p>
               </div>
               
               <div className="mt-2 mb-6">
                 <p className={`font-semibold ${darkMode ? 'text-white' : 'text-gray-800'}`}>
-                  <strong>Grade:</strong> 8.76/10
+                  <strong>Grade:</strong> 8.33/10
                 </p>
               </div>
               

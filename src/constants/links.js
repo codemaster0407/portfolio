@@ -1,11 +1,10 @@
 // Centralized file for all links and social profiles
 
 export const SOCIAL_LINKS = {
-    linkedin: "https://www.linkedin.com/in/sreevaatsav-bavana/",
-    github: "https://github.com/SreevaatsavB",
-    googleScholar: "https://scholar.google.com/citations?user=cckHTq0AAAAJ&hl=en",
-    kaggle: "https://www.kaggle.com/sreevaatsavbavana",
-    leetcode: "https://leetcode.com/u/vaatsav06/" // Replace with your actual LeetCode username
+    linkedin: "https://www.linkedin.com/in/chaitanya-srikanth-769406232/",
+    github: "https://github.com/codemaster0407",
+    googleScholar: "https://scholar.google.com/citations?view_op=list_works&hl=en&user=1Dpsq1cAAAAJ",
+    
   };
   
   export const RESUME_PATH = process.env.PUBLIC_URL + "/resume/resume.pdf";
@@ -16,7 +15,7 @@ export const SOCIAL_LINKS = {
     nvidiaSDK: "https://github.com/SreevaatsavB/ICETCI-Hackathon",
     videoSummarization: "",
     layoffsAnalysis: "",
-    scratchLLM: "https://github.com/SreevaatsavB/Generative_AI_fundamentals"
+    scratchLLM: ""
   };
   
   // Publication links
