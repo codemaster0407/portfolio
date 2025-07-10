@@ -42,8 +42,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "main": "^6.3.0"
-  },
   "homepage": "https://codemaster0407.github.io/portfolio"
 }
