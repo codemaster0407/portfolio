@@ -10,13 +10,28 @@ const Experience = () => {
   const experienceData = [
     {
       id: 1,
+      role: 'Intern',
+      company: 'Gillmore Financial Technology Center',
+      companyUrl: 'https://warwick.ac.uk/fac/soc/wbs/subjects/finance/gillmore/',
+      logo: `${process.env.PUBLIC_URL}/assets/logos/wbs-logo.png`,
+      period: 'April 2026 - Present',
+      description: 'Working as a research intern in building a Unified Embedding model for financial documents.',
+      skills: ['Python', 'PyTorch', 'Embeddings', 'RAGs', 'LLMs'],
+      details: [
+        'Developing a Unified Embedding model for financial documents.',
+        'Fine-tuning LLMs for financial tasks.',
+        'Building RAG pipelines for financial documents.',
+      ]
+    },
+    {
+      id: 2,
       role: 'Associate AI Engineer',
       company: 'Techolution',
       companyUrl: 'https://www.techolution.com/',
       logo: `${process.env.PUBLIC_URL}/assets/logos/techo.svg`,
       period: 'June 2024 - July 2025',
       description: 'Worked as a full time AI Engineer specializing in Computer vision applications and Python backend.',
-      skills: ['Computer Vision', 'Docker', 'Python', 'VLLMs', 'Backend Development'],
+      skills: ['Computer Vision', 'Docker', 'Python', 'VLLMs', 'Backend Development', 'Google Cloud'],
       details: [
         'Developed a medical product scanning station for faster inventory management for medical products.',
         'Developed pipelines for custom OCR models for handwritten text recognition ',
@@ -24,7 +39,7 @@ const Experience = () => {
       ]
     },
     {
-      id: 2,
+      id: 3,
       role: 'AI Intern',
       company: 'Techolution',
       companyUrl: 'https://www.techolution.com/',
