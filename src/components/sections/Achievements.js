@@ -65,7 +65,7 @@ const PhotoCarousel = ({ photos, alt }) => {
 
 const achievements = [
   {
-    id: 1,
+    id: 2,
     emoji: '🏆',
     title: '1st Place — Warwick Consulting Case Competition',
     subtitle: '180 Degrees Consulting × Enactus Warwick | University of Warwick',
@@ -77,15 +77,13 @@ const achievements = [
       'Built a financial model without Excel — leveraging modern analytical tooling for the first time.',
       'Prize money donated to Ashden to support innovative climate solutions globally.',
     ],
-    team: 'Xin Yu Lim · Pisitchai Tachavises · Chaitanya Srikanth · Carlson Law',
-    // ↓ Add photo paths here, e.g.: process.env.PUBLIC_URL + '/images/achievements/consulting-1.jpg'
     photos: [
-      // process.env.PUBLIC_URL + '/images/achievements/consulting-1.jpg',
-      // process.env.PUBLIC_URL + '/images/achievements/consulting-2.jpg',
+      process.env.PUBLIC_URL + '/images/achievements/achievement_1/1763577980601.jpeg',
+      process.env.PUBLIC_URL + '/images/achievements/achievement_1/1763577980647.jpeg',
     ],
   },
   {
-    id: 2,
+    id: 1,
     emoji: '🚀',
     title: 'Top 4 Finalist — Google × NatWest Hackathon',
     subtitle: 'Secure Intelligence Frontier Hackathon | Google London Office',
@@ -97,11 +95,11 @@ const achievements = [
       'Pitched to industry judges including representatives from Google and NatWest Group.',
       'Placed in the top 4 out of 26 competing teams.',
     ],
-    team: 'Jay Vardhan Sadhu · Medha Mallikarjuna · Antima Modak · Rachel Sequeira · Chaitanya Srikanth',
-    // ↓ Add photo paths here
     photos: [
-      // process.env.PUBLIC_URL + '/images/achievements/google-hackathon-1.jpg',
-      // process.env.PUBLIC_URL + '/images/achievements/google-hackathon-2.jpg',
+      process.env.PUBLIC_URL + '/images/achievements/achievment_2/1773858856408.jpeg',
+      process.env.PUBLIC_URL + '/images/achievements/achievment_2/1773858864432.jpeg',
+      process.env.PUBLIC_URL + '/images/achievements/achievment_2/1773858872392.jpeg',
+      process.env.PUBLIC_URL + '/images/achievements/achievment_2/1773858876311.jpeg',
     ],
   },
 ];
