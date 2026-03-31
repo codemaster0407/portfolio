@@ -14,6 +14,7 @@ import Education from './components/sections/Education';
 import Projects from './components/sections/Projects';
 import Skills from './components/sections/Skills';
 import Research from './components/sections/Research';
+import Achievements from './components/sections/Achievements';
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState('about');
@@ -54,6 +55,10 @@ const Portfolio = () => {
         
         <div className={`${activeSection === 'skills' ? 'block' : 'hidden'}`}>
           <Skills />
+        </div>
+
+        <div className={`${activeSection === 'achievements' ? 'block' : 'hidden'}`}>
+          <Achievements />
         </div>
       </main>
 
