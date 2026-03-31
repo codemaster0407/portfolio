@@ -13,7 +13,7 @@ const Experience = () => {
       role: 'Intern',
       company: 'Gillmore Financial Technology Center',
       companyUrl: 'https://warwick.ac.uk/fac/soc/wbs/subjects/finance/gillmore/',
-      logo: `${process.env.PUBLIC_URL}/assets/logos/wbs-logo.png`,
+      logo: `${process.env.PUBLIC_URL}/assets/logos/wbs-logo.svg`,
       period: 'April 2026 - Present',
       description: 'Working as a research intern in building a Unified Embedding model for financial documents.',
       skills: ['Python', 'PyTorch', 'Embeddings', 'RAGs', 'LLMs'],

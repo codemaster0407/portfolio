@@ -141,10 +141,12 @@ const About = () => {
             <div className="mb-8">
               <h3 className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-4`}>Current Focus</h3>
               <p className={`${darkMode ? 'text-gray-300' : 'text-gray-700'} mb-4`}>
-                I'm currently preparing for my next journey in my career as a  <span className={`font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}> Masters in Business Analytics Student</span> at Warwick Business School, UK. I'll be starting my studies in September 2025, where I aim to bridge the gap between AI technology and business strategy. This program will equip me with the skills to leverage data analytics for strategic decision-making, enhancing my ability to create AI solutions that drive business value.
+                  I'm currently a Masters in Business Analytics Student at Warwick Business School, UK. 
+                  I am learning to bridge the gap between AI technology and business strategy. 
+                  This program has equipped me with the skills to leverage data analytics for strategic decision-making, enhancing my ability to create AI solutions that drive business value.
               </p>
               <p className={darkMode ? 'text-gray-300' : 'text-gray-700'}>
-                At Techolution, I have developed advanced solutions for <span className={`font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>Inventory Management using Computer Vision</span> . Currently, I'm interested in exploring the intersection of AI and business, particularly in how AI can optimize operations and enhance customer experiences. I am also keen on learning more about <span className={`font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>Generative AI</span> and its applications in various industries.
+                Previously at Techolution, I have developed advanced solutions for <span className={`font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>Inventory Management using Computer Vision</span> . Currently, I'm interested in exploring the intersection of AI and business, particularly in how AI can optimize operations and enhance customer experiences. I am also keen on learning more about <span className={`font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>Generative AI</span> and its applications in various industries.
               </p>
             </div>
           </div>
