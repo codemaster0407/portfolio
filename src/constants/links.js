@@ -7,7 +7,7 @@ export const SOCIAL_LINKS = {
     
   };
   
-  export const RESUME_PATH = process.env.PUBLIC_URL + "/resume/resume.pdf";
+  export const RESUME_PATH = process.env.PUBLIC_URL + "/resume/Chaitanya Srikanth CV.pdf";
   
   // Project links
   export const PROJECT_LINKS = {

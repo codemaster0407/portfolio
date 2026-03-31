@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTheme } from '../../context/ThemeContext';
 import SectionTitle from '../common/SectionTitle';
-import TimelineItem from '../ui/TimelineItem';
+
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const Experience = () => {

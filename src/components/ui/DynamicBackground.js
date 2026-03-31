@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTheme } from '../../context/ThemeContext';
 import InteractiveBackground from './InteractiveBackground';
 import FlowBackground from './FlowBackground';
-import NeuralNetworkBackground from './NeuralNetworkBackground';
+
 
 const DynamicBackground = () => {
   const { darkMode } = useTheme();
