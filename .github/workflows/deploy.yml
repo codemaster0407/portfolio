@@ -4,8 +4,9 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:   # Allow manual trigger from GitHub Actions tab
 
-# Allow GITHUB_TOKEN to deploy to GitHub Pages
+# Allow GITHUB_TOKEN to read/write repository contents for deployment
 permissions:
   contents: write
 
@@ -21,10 +22,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build
         run: npm run build
@@ -36,3 +36,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
+          publish_branch: gh-pages
