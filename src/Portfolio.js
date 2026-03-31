@@ -31,7 +31,7 @@ const Portfolio = () => {
       <Hero />
 
       {/* Main Content */}
-      <main className="container mx-auto px-6 py-12 relative z-10">
+      <main id="main-content" className="container mx-auto px-6 py-12 relative z-10">
         {/* Section visibility is controlled by the activeSection state */}
         <div className={`${activeSection === 'about' ? 'block' : 'hidden'}`}>
           <About />

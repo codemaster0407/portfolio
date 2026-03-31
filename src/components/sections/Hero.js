@@ -12,7 +12,7 @@ const Hero = () => {
           {/* Left side with text */}
           <div className="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Chaitanya Srikanth</h1>
-            <h2 className="text-xl md:text-2xl mb-6 text-white">Incoming MSBA student at Warwick Business School | Ex AI Engineer @ Techolution | Computer Vision | Google Certified Professional Machine Learning Engineer</h2>
+            <h2 className="text-xl md:text-2xl mb-6 text-white">MSBA student at Warwick Business School | Ex AI Engineer @ Techolution | Computer Vision | Google Certified Professional Machine Learning Engineer</h2>
             <p className="text-lg mb-8 max-w-lg text-white">
               Passionate about leveraging   AI to build innovative solutions and detect interesting patterns from data and bridge gap between business and technology.
             </p>
@@ -33,14 +33,14 @@ const Hero = () => {
           {/* Right side with image */}
           <div className="md:w-1/2 flex justify-center md:justify-end">
             <div className="relative">
-              <div className="w-64 h-64 rounded-full border-4 border-white overflow-hidden shadow-lg">
+              <div className="rounded-2xl border-4 border-white overflow-hidden shadow-lg bg-white">
                 <img 
-                  src= {process.env.PUBLIC_URL + "/images/profile/profile-photo.jpg" }
-                  alt="Sreevaatsav B" 
-                  className="w-full h-full object-cover"
+                  src={process.env.PUBLIC_URL + "/images/profile/profile-photo.jpeg"}
+                  alt="Chaitanya Srikanth" 
+                  className="w-72 h-auto object-contain block"
                   onError={(e) => {
                     e.target.onerror = null; 
-                    e.target.src = "/api/placeholder/300/300";
+                    e.target.src = "/api/placeholder/300/400";
                   }} 
                 />
               </div>

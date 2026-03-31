@@ -130,7 +130,7 @@ const About = () => {
             <div className="mb-8">
               <h3 className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-4`}>Hey, I'm Chaitanya!</h3>
               <p className={`${darkMode ? 'text-gray-300' : 'text-gray-700'} mb-4`}>
-                Hi there! I’m an AI Engineer with a passion for building impactful and innovative AI solutions. With a solid background in Computer Vision, I’ve developed multiple applications and successfully delivered client-facing projects. Beyond my enthusiasm for AI, I also enjoy crafting robust backend systems in Python and building scalable applications using Docker and Kubernetes.
+                Hi there! I’m an AI Engineer with a passion for building impactful and innovative AI solutions. With a solid background in Computer Vision and Generative AI, I’ve developed multiple applications and successfully delivered client-facing projects. Beyond my enthusiasm for AI, I also enjoy crafting robust backend systems in Python and building scalable applications using Docker and Kubernetes.
               </p>
               <p className={darkMode ? 'text-gray-300' : 'text-gray-700'}>
                 I'm always eager to collaborate on projects that push the boundaries of what's possible with technology while making a positive impact on people's lives. Let's connect and create something amazing together! You have an idea, I build it!

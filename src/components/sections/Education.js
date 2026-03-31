@@ -65,12 +65,11 @@ const Education = () => {
 
                 {/* Warwick Photo */}
                 <div className="my-4 flex flex-col items-center">
-                  <div className={`rounded-lg overflow-hidden border-2 ${darkMode ? 'border-blue-200' : 'border-blue-200'} shadow-md`} style={{ width: '110%', maxWidth: '600px' }}>
+                  <div className={`rounded-lg overflow-hidden border-2 ${darkMode ? 'border-blue-200' : 'border-blue-200'} shadow-md w-full flex items-center justify-center`} style={{ height: '350px', background: darkMode ? '#1f2937' : '#f9fafb' }}>
                     <img
                       src={process.env.PUBLIC_URL + "/images/profile/warwick-start.jpeg"}
                       alt="Warwick Business School"
-                      className="w-full h-auto object-cover"
-                      style={{ maxHeight: '350px' }}
+                      className="w-full h-full object-contain"
                       onError={(e) => {
                         e.target.onerror = null;
                         e.target.src = "/api/placeholder/400/250";
@@ -130,12 +129,11 @@ const Education = () => {
                 </div>
 
                 <div className="my-4 flex flex-col items-center">
-                  <div className={`rounded-lg overflow-hidden border-2 ${darkMode ? 'border-blue-200' : 'border-blue-200'} shadow-md`} style={{ width: '110%', maxWidth: '600px' }}>
+                  <div className={`rounded-lg overflow-hidden border-2 ${darkMode ? 'border-blue-200' : 'border-blue-200'} shadow-md w-full flex items-center justify-center`} style={{ height: '350px', background: darkMode ? '#1f2937' : '#f9fafb' }}>
                     <img
                       src={process.env.PUBLIC_URL + "/images/graduation/grad.jpg"}
                       alt="Receiving Gold Medal from Anand Mahindra"
-                      className="w-full h-auto object-cover"
-                      style={{ maxHeight: '350px' }}
+                      className="w-full h-full object-contain"
                       onError={(e) => {
                         e.target.onerror = null;
                         e.target.src = "/api/placeholder/400/250";

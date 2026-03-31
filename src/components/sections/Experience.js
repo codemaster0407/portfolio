@@ -24,6 +24,19 @@ const Experience = () => {
       ]
     },
     {
+      id: 4,
+      role: 'Mentor',
+      company: 'Warwick Coding Society',
+      companyUrl: 'https://www.linkedin.com/company/76108145/',
+      logo: `${process.env.PUBLIC_URL}/images/warwick-coding-soc.jpeg`,
+      period: 'October 2025 - December 2025',
+      description: 'Mentoring students in building AI and ML projects in Python.',
+      skills: ['Computer Vision', 'Python', 'FastAPI', 'Flask'],
+      details: [
+        'Mentoring students in building AI and ML projects in Python.'
+      ]
+    },
+    {
       id: 2,
       role: 'Associate AI Engineer',
       company: 'Techolution',

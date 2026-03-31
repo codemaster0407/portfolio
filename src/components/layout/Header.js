@@ -10,6 +10,12 @@ const Header = ({ activeSection, setActiveSection }) => {
   const handleNavClick = (section) => {
     setActiveSection(section);
     setMenuOpen(false);
+    if (section !== 'about') {
+      setTimeout(() => {
+        const el = document.getElementById('main-content');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 50);
+    }
   };
 
   return (

@@ -16,15 +16,15 @@ const PhotoCarousel = ({ photos, alt }) => {
   return (
     <div className="relative my-5">
       <div
-        className={`rounded-xl overflow-hidden border-2 ${darkMode ? 'border-gray-700' : 'border-gray-200'} shadow-lg`}
-        style={{ maxHeight: '360px' }}
+        className={`rounded-xl overflow-hidden border-2 ${darkMode ? 'border-gray-700' : 'border-gray-200'} shadow-lg flex items-center justify-center`}
+        style={{ minHeight: '320px', maxHeight: '600px', backgroundColor: darkMode ? '#111827' : '#f9fafb' }}
       >
         <img
           src={photos[current]}
           alt={`${alt} ${current + 1}`}
-          className="w-full h-full object-cover"
-          style={{ maxHeight: '360px' }}
-          onError={(e) => { e.target.onerror = null; e.target.src = '/api/placeholder/600/360'; }}
+          className="w-full h-auto object-contain"
+          style={{ maxHeight: '600px' }}
+          onError={(e) => { e.target.onerror = null; e.target.src = '/api/placeholder/600/400'; }}
         />
       </div>
 
@@ -65,6 +65,26 @@ const PhotoCarousel = ({ photos, alt }) => {
 
 const achievements = [
   {
+    id: 1,
+    emoji: '🚀',
+    title: 'Top 4 Finalist — Google × NatWest Hackathon',
+    subtitle: 'Secure Intelligence Frontier Hackathon | Google London Office',
+    tags: ['FinTech', 'AI', 'Hackathon', 'Google', 'NatWest'],
+    summary:
+      'Reached the finals of the Secure Intelligence Frontier Hackathon — top 4 out of 26 teams — and pitched at the Google London office. Our solution VTap simplifies everyday financial decisions by intelligently selecting the best payment method for each transaction.',
+    highlights: [
+      'Designed and built VTap: an AI-driven payment optimisation product in a competitive hackathon setting.',
+      'Pitched to industry judges including representatives from Google and NatWest Group.',
+      'Placed in the top 4 out of 26 competing teams.',
+    ],
+    photos: [
+      process.env.PUBLIC_URL + '/images/achievements/achievment_2/1773858876311.jpeg',
+      process.env.PUBLIC_URL + '/images/achievements/achievment_2/1773858856408.jpeg',
+      process.env.PUBLIC_URL + '/images/achievements/achievment_2/1773858864432.jpeg',
+      process.env.PUBLIC_URL + '/images/achievements/achievment_2/1773858872392.jpeg'
+    ],
+  },
+  {
     id: 2,
     emoji: '🏆',
     title: '1st Place — Warwick Consulting Case Competition',
@@ -81,27 +101,7 @@ const achievements = [
       process.env.PUBLIC_URL + '/images/achievements/achievement_1/1763577980601.jpeg',
       process.env.PUBLIC_URL + '/images/achievements/achievement_1/1763577980647.jpeg',
     ],
-  },
-  {
-    id: 1,
-    emoji: '🚀',
-    title: 'Top 4 Finalist — Google × NatWest Hackathon',
-    subtitle: 'Secure Intelligence Frontier Hackathon | Google London Office',
-    tags: ['FinTech', 'AI', 'Hackathon', 'Google', 'NatWest'],
-    summary:
-      'Reached the finals of the Secure Intelligence Frontier Hackathon — top 4 out of 26 teams — and pitched at the Google London office. Our solution VTap simplifies everyday financial decisions by intelligently selecting the best payment method for each transaction.',
-    highlights: [
-      'Designed and built VTap: an AI-driven payment optimisation product in a competitive hackathon setting.',
-      'Pitched to industry judges including representatives from Google and NatWest Group.',
-      'Placed in the top 4 out of 26 competing teams.',
-    ],
-    photos: [
-      process.env.PUBLIC_URL + '/images/achievements/achievment_2/1773858856408.jpeg',
-      process.env.PUBLIC_URL + '/images/achievements/achievment_2/1773858864432.jpeg',
-      process.env.PUBLIC_URL + '/images/achievements/achievment_2/1773858872392.jpeg',
-      process.env.PUBLIC_URL + '/images/achievements/achievment_2/1773858876311.jpeg',
-    ],
-  },
+  }
 ];
 
 const Achievements = () => {
@@ -172,11 +172,6 @@ const Achievements = () => {
                   </li>
                 ))}
               </ul>
-
-              {/* Team */}
-              <p className={`text-sm mt-4 border-t pt-3 ${darkMode ? 'border-gray-700 text-gray-400' : 'border-gray-100 text-gray-500'}`}>
-                <span className="font-medium">Team:</span> {ach.team}
-              </p>
             </div>
           ))}
         </div>
