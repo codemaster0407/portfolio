@@ -10,7 +10,7 @@ const Experience = () => {
   const experienceData = [
     {
       id: 5,
-      role: 'ML Engineer (Still to be decided)',
+      role: 'ML Engineer - Contract',
       company: 'WM Trains Ltd.',
       companyUrl: 'https://www.westmidlandsrailway.co.uk/',
       logo: `${process.env.PUBLIC_URL}/icons/wm_logo.jpeg`,
